@@ -54,6 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     height: 42,
                     child: TextFormField(
+
                       cursorColor: Colors.white,
                       style: const TextStyle(fontSize: 15, color: Colors.white),
                       decoration: InputDecoration(
@@ -61,16 +62,17 @@ class _MyHomePageState extends State<MyHomePage> {
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: const BorderSide(
-                              color: Color(0xFF888888),
+                              color: Color(0xFFFFFFFF),
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
                               borderSide: const BorderSide(
-                                color: Color(0xFF848484),
+                                color: Color(0xFFFFFFFF),
                               )),
                           hintText: "Email or phone number",
-                          hintStyle: const TextStyle(fontSize: 15, color: Color(0xFF848484))),
+                          hintStyle: const TextStyle(fontSize: 15, color: Color(
+                              0xFFC9C9C9))),
                     ),
                   ),
                   const SizedBox(height: 20),
@@ -84,16 +86,16 @@ class _MyHomePageState extends State<MyHomePage> {
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: const BorderSide(
-                              color: Color(0xFF848484),
+                              color: Color(0xFFFFFFFF),
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
                               borderSide: const BorderSide(
-                                color: Color(0xFF848484),
+                                color: Color(0xFFFFFFFF),
                               )),
                           hintText: "Password",
-                          hintStyle: const TextStyle(fontSize: 14, color: Color(0xFF848484)),
+                          hintStyle: const TextStyle(fontSize: 14, color: Color(0xFFC9C9C9)),
                       ),
                       obscureText: true,
                     ),
@@ -117,6 +119,20 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   const SizedBox(height: 30),
+                  const Text(
+                    "Forgot Password?",
+                    style: TextStyle(fontSize: 15, color: Color(0xFFFAFCFF)),
+                  ),
+                  const SizedBox(height: 200),
+                  const Text(
+                    "Create a new account",
+                    style: TextStyle(fontSize: 15, color: Colors.white),
+                  ),
+                  const SizedBox(height: 20),
+                  const Text(
+                    "Need help?",
+                    style: TextStyle(fontSize: 15, color: Colors.white),
+                  ),
                 ],
               ),
             ),
