@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Column(
                 children: <Widget>[
 
-                  const Spacer(flex:1),
+                  const SizedBox(height: 220),
                   const Image(
                     image: AssetImage("assets/fb.png"),
                     height: 60,
